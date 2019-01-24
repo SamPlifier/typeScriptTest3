@@ -24,10 +24,13 @@ namespace App.Shapes {
 }
 
 import Shapes = App.Shapes;
-var log: App.Utils.ILogger = new App.Utils.Logger(App.LoggerMode.Toastr);
+import Utils = App.Utils;
+
+var log: Utils.ILogger = new Utils.Logger(App.LoggerMode.Toastr);
 var p: Shapes.IPoint = new Shapes.Point(3, 4);
 var dist = p.getDist();
-
+log.write(`Distance: ${dist}`);
 
 var rect: Shapes.IRectangle = new Shapes.Rectangle(10, 4);
 var perimeter = rect.getPerimeter();
+log.write(`Perimiter: ${perimeter}`);
