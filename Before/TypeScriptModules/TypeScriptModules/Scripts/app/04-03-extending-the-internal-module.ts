@@ -68,3 +68,5 @@ import Utils = App.Tools.Utils;
 var log = new Tools.Utils.Logger(LoggerMode.Toastr);
 
 var p : IPoint = new Tools.Shapes.Point(3,4);
+var dist = p.getDist();
+log.write(`Distance: ${dist}`);

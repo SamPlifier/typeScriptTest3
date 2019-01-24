@@ -1,3 +1,4 @@
+/// <reference path="../../../../../toastr.d.ts" />
 namespace App {
     export var LoggerMode = {
         Console: 1,

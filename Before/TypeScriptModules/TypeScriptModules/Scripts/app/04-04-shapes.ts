@@ -1,3 +1,4 @@
+/// <reference path="04-04-utils.ts" />
 namespace App.Shapes {
     export interface IPoint {
         getDist(): number;
@@ -23,9 +24,10 @@ namespace App.Shapes {
 }
 
 import Shapes = App.Shapes;
-
+var log: App.Utils.ILogger = new App.Utils.Logger(App.LoggerMode.Toastr);
 var p: Shapes.IPoint = new Shapes.Point(3, 4);
 var dist = p.getDist();
+
 
 var rect: Shapes.IRectangle = new Shapes.Rectangle(10, 4);
 var perimeter = rect.getPerimeter();
