@@ -1,6 +1,8 @@
-/// <reference path="dataservice.ts" />
-var dataservice = new DataService();
-var Alerter = (function () {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var ds = require("./dataservice");
+var dataservice = new ds.DataService();
+var Alerter = /** @class */ (function () {
     function Alerter() {
         this.name = 'John';
     }
@@ -10,5 +12,5 @@ var Alerter = (function () {
     };
     ;
     return Alerter;
-})();
-//# sourceMappingURL=alerter.js.map
+}());
+exports.Alerter = Alerter;
