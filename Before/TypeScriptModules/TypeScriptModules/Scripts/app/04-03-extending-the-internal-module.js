@@ -1,4 +1,4 @@
-/// <reference path="/Users/samdc/Desktop/psTypescriptFundamentals/typeScriptTest3/toastr.d.ts" />
+/// <reference path="../../../../../toastr.d.ts" />
 //Extending Internal modules
 var LoggerMode = {
     Console: 1,
@@ -75,3 +75,4 @@ var App;
 var Tools = App.Tools;
 var Utils = App.Tools.Utils;
 var log = new Tools.Utils.Logger(LoggerMode.Toastr);
+var p = new Tools.Shapes.Point(3, 4);

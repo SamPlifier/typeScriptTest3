@@ -1,4 +1,4 @@
-/// <reference path="/Users/samdc/Desktop/psTypescriptFundamentals/typeScriptTest3/toastr.d.ts" />
+/// <reference path="../../../../../toastr.d.ts" />
 var Shapes;
 (function (Shapes) {
     var Rectangle = /** @class */ (function () {
